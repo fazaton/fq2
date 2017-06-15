@@ -1,0 +1,8 @@
+<h5>Enter Game name and its rating</h5>
+
+<%= simple_form_for @game do |f| %>
+  <%= f.input :gname %>
+  <%= f.input :rate %>
+  <br />
+  <%= f.submit 'Add', class: 'btn btn-danger' %>
+<% end %>

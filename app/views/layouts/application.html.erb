@@ -9,6 +9,28 @@
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+        <div class='circle'>
+          <%= link_to "Games", games_path %>
+        </div>
+      </div>
+      <div class="col-9 offset-1 text-center slogan">
+        <b>
+        Database with all PC Games and their ratings. 
+        <br />
+        Add yours!
+        </b>
+      </div>
+      
+      <div class="col-6 offset-2 btn btn-warning">
+        <%= link_to 'Add new game name&rating', new_game_path %>
+      </div>
+      
+    </header>
+    
+    <br class="clear" />
+    
     <%= yield %>
   </body>
 </html>
